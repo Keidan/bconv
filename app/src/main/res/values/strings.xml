@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">bConverter</string>
+    <string name="app_name">bconv</string>
+    <string name="labelBits">Bit/sec</string>
+    <string name="labelOctets">Octet/sec</string>
+    <string name="empty">@null</string>
+    <string name="labelBits2Octets">Bit/s to Octet/s</string>
+    <string name="labelOctets2Bits">Octet/s to Bit/s</string>
+    <string name="menuClear">Clear</string>
+    <string name="buttonConvert">Convert</string>
+</resources>

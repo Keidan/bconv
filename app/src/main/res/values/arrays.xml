@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit_array_b">
+        <item>bit</item>
+        <item>Kb</item>
+        <item>Mb</item>
+        <item>Gb</item>
+        <item>Tb</item>
+    </string-array>
+    <string-array name="unit_array_o">
+        <item>octet</item>
+        <item>Ko</item>
+        <item>Mo</item>
+        <item>Go</item>
+        <item>To</item>
+    </string-array>
+</resources>

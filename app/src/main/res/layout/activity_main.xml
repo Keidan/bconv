@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="12dp">
+
+
+	<TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:stretchColumns="1">
+		<TableRow>
+			<TextView android:id="@+id/labelBits"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/labelBits"
+				android:labelFor="@id/editTextBits" />
+
+			<EditText
+				android:id="@+id/editTextBits"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				android:imeOptions="actionSend" >
+
+				<requestFocus />
+			</EditText>
+			<Spinner android:id="@+id/spinnerUnitBits"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:entries="@array/unit_array_b"/>
+		</TableRow>
+		<TableRow>
+
+			<TextView android:id="@+id/labelOctets"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/labelOctets"
+				android:labelFor="@id/editTextOctets"/>
+
+			<EditText
+				android:id="@+id/editTextOctets"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				android:imeOptions="actionSend"/>
+
+			<Spinner android:id="@+id/spinnerUnitOctets"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:entries="@array/unit_array_o"/>
+		</TableRow>
+	</TableLayout>
+    <ToggleButton
+        android:id="@+id/buttonTypeChoice"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="@string/labelOctets2Bits"
+        android:textOff="@string/labelBits2Octets"
+        android:onClick="onClick" />
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonConvert"
+        android:onClick="onClick" />
+</LinearLayout>
