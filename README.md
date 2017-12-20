@@ -16,7 +16,7 @@ download the software :
 	
 	git clone git://github.com/Keidan/bconv.git
 	cd bconv
- 	Use with eclipse 
+ 	Use with android studio 
 
 License (like GPL)
 ==================
